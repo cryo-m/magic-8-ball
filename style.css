@@ -21,8 +21,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    width: 100%;
-    max-width: 360px;
+    width: 30vw;
+
 }
 
 .question-input {
@@ -48,8 +48,8 @@ body {
 }
 
 .magic-ball {
-    width: 600px;
-    height: 600px;
+    width: 75vmin;
+    height: 75vmin;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, #4a4a52 0%, #16161a 45%, #040405 90%);
     box-shadow: 
@@ -71,15 +71,15 @@ body {
 }
 
 .ball-window {
-    width: 250px;
-    height: 250px;
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     background: radial-gradient( #1b0c3b 0%, #070312 85%);
     border: 7px solid #1c1c22;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 6%;
     text-align: center;
 }
 
