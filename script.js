@@ -25,25 +25,31 @@ magicBall.appendChild(ballWindow);
 document.body.append(questionBox, magicBall);
 
 function answer(){
-    answerText.style.fontSize = '1.8em'
     const answers = [
     "Безперечно",
     "Вирішено напевно",
     "Без жодних сумнівів",
     "Однозначно так",
     "Можеш бути впевнений у цьому",
-    "Як на мене — так",
+    "Як на мене - так",
     "Найімовірніше",
-    "Знаки кажуть — так",
+    "Знаки кажуть - так",
     "Так",
     "Запитай пізніше",
     "Краще тобі зараз цього не знати",
     "Зараз неможливо передбачити",
     "Навіть не розраховуй",
-    "За моїми даними — ні",
+    "За моїми даними - ні",
     "Перспективи не дуже хороші",
     "Дуже сумнівно"
     ];
+
     let index = Math.floor(Math.random() * answers.length);
-    answerText.textContent = answers[index];
+    
+    answerText.style.opacity = '0';
+    setTimeout(() => {
+        answerText.style.fontSize = '1.8em'
+        answerText.textContent = answers[index];
+        answerText.style.opacity = '1';
+    }, 300);
 }
